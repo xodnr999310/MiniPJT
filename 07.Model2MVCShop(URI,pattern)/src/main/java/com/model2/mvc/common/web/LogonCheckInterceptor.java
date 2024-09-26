@@ -45,6 +45,7 @@ public class LogonCheckInterceptor extends HandlerInterceptorAdapter {
 			//==> 로그인 상태에서 접근 불가 URI
 			String uri = request.getRequestURI();
 			
+			//사라진 이유 ==> UserContrtoller 확인!
 			/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 			if(		uri.indexOf("addUserView") != -1 	|| 	uri.indexOf("addUser") != -1 || 
 					uri.indexOf("loginView") != -1 			||	uri.indexOf("login") != -1 		|| 
